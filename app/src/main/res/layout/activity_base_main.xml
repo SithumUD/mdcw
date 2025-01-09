@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:background="#1E90FF"
             android:padding="16dp">
 
             <TextView
@@ -28,6 +29,9 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:layout_marginHorizontal="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20dp"
                 android:text="Medi Log" />
 
             <ImageButton
@@ -74,6 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add Person"
+        android:backgroundTint="#28A745"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

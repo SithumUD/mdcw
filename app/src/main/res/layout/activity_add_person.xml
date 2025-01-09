@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:background="#1E90FF"
             android:padding="16dp">
 
             <ImageButton
@@ -37,7 +38,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="10dp"
-                android:text="New Person" />
+                android:text="New Person"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
@@ -119,6 +123,7 @@
                     android:id="@+id/btnselectbirthday"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#28A745"
                     android:layout_marginHorizontal="16dp"
                     android:text="select birthday" />
 
@@ -279,6 +284,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:backgroundTint="#28A745"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="20dp"
             android:text="Save Person" />

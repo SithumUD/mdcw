@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="#ADD8E6"
+            android:background="#1E90FF"
             android:padding="16dp">
 
             <ImageButton
@@ -39,7 +39,20 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginHorizontal="10dp"
-                android:text="Person Name" />
+                android:text="Person Name"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/btnmore"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/more" />
 
         </LinearLayout>
 
@@ -53,19 +66,50 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                android:background="#E9ECEF"
                 android:orientation="horizontal">
 
                 <ImageButton
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
                     android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/overview" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Overview" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="#E9ECEF"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/injury" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:layout_marginHorizontal="10dp"
                     android:text="Injuries" />
 
@@ -76,6 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                android:background="#E9ECEF"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -83,14 +128,17 @@
                     android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/vaccine" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Log 2" />
+                    android:text="Vaccine" />
 
             </LinearLayout>
 
@@ -99,6 +147,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                android:background="#E9ECEF"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -106,14 +155,17 @@
                     android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/allergy" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Log 3" />
+                    android:text="Allergy" />
 
             </LinearLayout>
 
@@ -122,6 +174,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                android:background="#E9ECEF"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -129,14 +182,17 @@
                     android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/bloodpressure" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Log 4" />
+                    android:text="Blood pressure" />
 
             </LinearLayout>
 
@@ -145,6 +201,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                android:background="#E9ECEF"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -152,14 +209,17 @@
                     android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/diabetis" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Log 5" />
+                    android:text="Blood glucose" />
 
             </LinearLayout>
 
@@ -168,6 +228,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                android:background="#E9ECEF"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -175,14 +236,17 @@
                     android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/oxygen" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Log 6" />
+                    android:text="Oxygen saturation(Sp02)" />
 
             </LinearLayout>
 
@@ -191,6 +255,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                android:background="#E9ECEF"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -198,14 +263,17 @@
                     android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/examination" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Log 7" />
+                    android:text="Examination" />
 
             </LinearLayout>
 
@@ -214,6 +282,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                android:background="#E9ECEF"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -221,14 +290,17 @@
                     android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/appoinment" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Log 8" />
+                    android:text="Assign Appointment" />
 
             </LinearLayout>
 
@@ -237,6 +309,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:padding="10dp"
+                android:background="#E9ECEF"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -244,37 +317,17 @@
                     android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/surgery" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:textColor="@color/black"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Log 9" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:padding="10dp"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/ic_launcher_background" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="10dp"
-                    android:text="Log 10" />
+                    android:text="Surgery" />
 
             </LinearLayout>
 
