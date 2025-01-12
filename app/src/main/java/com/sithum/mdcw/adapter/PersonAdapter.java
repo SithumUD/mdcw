@@ -14,9 +14,15 @@ import java.util.List;
 
 public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.PersonViewHolder> {
     private List<Person> personList;
+    private OnPersonClickListener listener;
 
-    public PersonAdapter(List<Person> personList) {
+    public interface OnPersonClickListener {
+        void onPersonClick(String personName);
+    }
+
+    public PersonAdapter(List<Person> personList, OnPersonClickListener listener) {
         this.personList = personList;
+        this.listener = listener;
     }
 
     @NonNull
@@ -32,6 +38,12 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.PersonView
         Person person = personList.get(position);
         holder.nameTextView.setText(person.getName());
         holder.ageTextView.setText("Age: " + person.getAge());
+
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onPersonClick(person.getName());
+            }
+        });
     }
 
     @Override
@@ -49,4 +61,3 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.PersonView
         }
     }
 }
-

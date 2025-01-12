@@ -18,12 +18,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.sithum.R;
+import com.sithum.mdcw.activities.medicaltypeactivities.VaccineActivity;
 
 public class LogListActivity extends AppCompatActivity {
 
     String name;
     TextView txtname;
     ImageButton btnback, btnmore;
+    LinearLayout vaccine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,7 @@ public class LogListActivity extends AppCompatActivity {
         txtname = findViewById(R.id.txtname);
         btnback = findViewById(R.id.btnback);
         btnmore = findViewById(R.id.btnmore);
+        vaccine = findViewById(R.id.vaccine);
 
         txtname.setText(name);
 
@@ -57,6 +60,14 @@ public class LogListActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 showPopup(view);
+            }
+        });
+
+        vaccine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, VaccineActivity.class);
+                startActivity(intent);
             }
         });
     }

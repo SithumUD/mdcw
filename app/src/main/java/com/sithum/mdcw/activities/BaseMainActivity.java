@@ -55,7 +55,11 @@ public class BaseMainActivity extends AppCompatActivity {
             flotbtnaddperson.setVisibility(View.VISIBLE);
         } else {
             flotbtnaddperson.setVisibility(View.GONE);
-            adapter = new PersonAdapter(personList);
+            adapter = new PersonAdapter(personList, personName -> {
+                Intent intent = new Intent(BaseMainActivity.this, LogListActivity.class);
+                intent.putExtra("person_name", personName);
+                startActivity(intent);
+            });
             recyclerView.setAdapter(adapter);
         }
 

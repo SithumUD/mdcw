@@ -38,11 +38,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // If the database version is upgraded, drop the old table and create the new one
         if (oldVersion < 2) {
             db.execSQL("ALTER TABLE " + TABLE_NAME + " ADD COLUMN " + COLUMN_PROFILE_IMAGE + " BLOB");
         }
     }
+
 
     // Method to insert a new person record with an image
     public boolean insertPerson(String name, String birthday, int age, String gender, String bloodType, byte[] profileImage) {

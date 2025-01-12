@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Mdcw"
         tools:targetApi="31">
         <activity
+            android:name=".mdcw.activities.medicaltypeactivities.VaccineActivity"
+            android:exported="false" />
+        <activity
             android:name=".mdcw.activities.SearchActivity"
             android:exported="false" />
         <activity
