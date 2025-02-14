@@ -56,12 +56,22 @@
 
         </LinearLayout>
 
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+
         <LinearLayout
+            android:id="@+id/loglist"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/overview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -76,7 +86,7 @@
                     android:scaleType="centerCrop"
                     android:background="@android:color/transparent"
                     android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/overview" />
+                    android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -89,6 +99,35 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/medicalvisit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="#E9ECEF"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Medical visit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/injuries"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -103,7 +142,7 @@
                     android:scaleType="centerCrop"
                     android:background="@android:color/transparent"
                     android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/injury" />
+                    android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -131,7 +170,7 @@
                     android:layout_marginHorizontal="10dp"
                     android:scaleType="centerCrop"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/vaccine" />
+                    android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -144,6 +183,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/allergy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -158,7 +198,7 @@
                     android:layout_marginHorizontal="10dp"
                     android:scaleType="centerCrop"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/allergy" />
+                    android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -171,6 +211,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/bloodpressure"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -185,7 +226,7 @@
                     android:layout_marginHorizontal="10dp"
                     android:scaleType="centerCrop"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/bloodpressure" />
+                    android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -198,6 +239,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/bloodglucose"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -212,7 +254,7 @@
                     android:layout_marginHorizontal="10dp"
                     android:scaleType="centerCrop"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/diabetis" />
+                    android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -225,6 +267,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/oxygen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -239,7 +282,7 @@
                     android:layout_marginHorizontal="10dp"
                     android:background="@android:color/transparent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/oxygen" />
+                    android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -252,6 +295,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/examination"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -266,7 +310,7 @@
                     android:layout_marginHorizontal="10dp"
                     android:scaleType="centerCrop"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/examination" />
+                    android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -279,6 +323,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/prescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -291,9 +336,9 @@
                     android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="10dp"
-                    android:background="@android:color/transparent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/appoinment" />
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -301,11 +346,12 @@
                     android:layout_gravity="center"
                     android:textColor="@color/black"
                     android:layout_marginHorizontal="10dp"
-                    android:text="Assign Appointment" />
+                    android:text="Prescription" />
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/labtest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -318,9 +364,37 @@
                     android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:layout_marginHorizontal="10dp"
-                    android:background="@android:color/transparent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/surgery" />
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Lab Test" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Surgery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="#E9ECEF"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/back" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -332,7 +406,65 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="#E9ECEF"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Notes" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/appoinment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:background="#E9ECEF"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Assign Appointment" />
+
+            </LinearLayout>
+
         </LinearLayout>
+
+        </ScrollView>
 
     </LinearLayout>
 

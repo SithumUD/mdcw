@@ -15,7 +15,49 @@
         android:theme="@style/Theme.Mdcw"
         tools:targetApi="31">
         <activity
+            android:name=".mdcw.activities.medicaltypeactivities.NotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.LabTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.PrescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.MedicalVisitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.SurgeryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.AppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.ExaminationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.OxygenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.BloodGlucoseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.BloodPressureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.AllergyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.OverviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.medicaltypeactivities.InjuriesActivity"
+            android:exported="false" />
+        <activity
             android:name=".mdcw.activities.medicaltypeactivities.VaccineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mdcw.activities.TestActivity"
             android:exported="false" />
         <activity
             android:name=".mdcw.activities.SearchActivity"

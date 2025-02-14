@@ -18,6 +18,19 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.sithum.R;
+import com.sithum.mdcw.activities.medicaltypeactivities.AllergyActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.AppointmentActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.BloodGlucoseActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.BloodPressureActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.ExaminationActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.InjuriesActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.LabTestActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.MedicalVisitActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.NotesActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.OverviewActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.OxygenActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.PrescriptionActivity;
+import com.sithum.mdcw.activities.medicaltypeactivities.SurgeryActivity;
 import com.sithum.mdcw.activities.medicaltypeactivities.VaccineActivity;
 
 public class LogListActivity extends AppCompatActivity {
@@ -25,7 +38,7 @@ public class LogListActivity extends AppCompatActivity {
     String name;
     TextView txtname;
     ImageButton btnback, btnmore;
-    LinearLayout vaccine;
+    LinearLayout vaccine, injuries, overview, medicalvisit, allergy, bloodpressure, bloodglucose, oxygen, examination, prescription, labtest, Surgery, notes, appoinment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +58,21 @@ public class LogListActivity extends AppCompatActivity {
         txtname = findViewById(R.id.txtname);
         btnback = findViewById(R.id.btnback);
         btnmore = findViewById(R.id.btnmore);
+
         vaccine = findViewById(R.id.vaccine);
+        injuries = findViewById(R.id.injuries);
+        overview = findViewById(R.id.overview);
+        medicalvisit = findViewById(R.id.medicalvisit);
+        allergy = findViewById(R.id.allergy);
+        bloodpressure = findViewById(R.id.bloodpressure);
+        bloodglucose = findViewById(R.id.bloodglucose);
+        oxygen = findViewById(R.id.oxygen);
+        examination = findViewById(R.id.examination);
+        prescription = findViewById(R.id.prescription);
+        labtest = findViewById(R.id.labtest);
+        Surgery = findViewById(R.id.Surgery);
+        notes = findViewById(R.id.notes);
+        appoinment = findViewById(R.id.appoinment);
 
         txtname.setText(name);
 
@@ -67,6 +94,110 @@ public class LogListActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LogListActivity.this, VaccineActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        injuries.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, InjuriesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        overview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, OverviewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        medicalvisit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, MedicalVisitActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        allergy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, AllergyActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        bloodpressure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, BloodPressureActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        bloodglucose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, BloodGlucoseActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        oxygen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, OxygenActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        examination.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, ExaminationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        prescription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, PrescriptionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        labtest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, LabTestActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Surgery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, SurgeryActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        notes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, NotesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        appoinment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogListActivity.this, AppointmentActivity.class);
                 startActivity(intent);
             }
         });
